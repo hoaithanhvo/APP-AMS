@@ -61,6 +61,7 @@ public class MenuActivity extends AppCompatActivity {
         Button checkOutBtn = findViewById(R.id.checkout_btn);
         Button maintenanceBtn = findViewById(R.id.maintenance_btn);
         Button settingBtn = findViewById(R.id.setting_btn);
+        Button auditBtn = findViewById(R.id.audit_btn);
 
         // OnClickListener for button
         transferBtn.setOnClickListener(createButtonClickListener(DetailActivity.TRANSFER_MODE));
@@ -68,6 +69,7 @@ public class MenuActivity extends AppCompatActivity {
         checkOutBtn.setOnClickListener(createButtonClickListener(DetailActivity.CHECK_OUT_MODE));
         maintenanceBtn.setOnClickListener(createButtonClickListener(DetailActivity.MAINTENANCE_MODE));
         settingBtn.setOnClickListener(createButtonClickListener(DetailActivity.SETTING_MODE));
+        auditBtn.setOnClickListener(createButtonClickListener((DetailActivity.AUDIT_MODE)));
 
         // get reference EditText and Button
         inputSearch = findViewById(R.id.input_search);
@@ -179,6 +181,8 @@ public class MenuActivity extends AppCompatActivity {
             Intent intent;
             if (mode == DetailActivity.SETTING_MODE) {
                 intent = new Intent(this, SettingsActivity.class);
+            } else if (mode == DetailActivity.AUDIT_MODE) {
+                intent = new Intent(this, AuditActivity.class);
             } else {
                 intent = new Intent(this, SearchActivity.class);
                 intent.putExtra("mode", mode);

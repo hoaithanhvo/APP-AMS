@@ -23,16 +23,17 @@
                 android:layout_gravity="center"
                 android:contentDescription="@string/nidec_logo"
                 android:src="@drawable/logo_nidec" />
+
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
+                android:layout_gravity="center"
                 android:layout_marginTop="-40dp"
                 android:layout_marginBottom="30dp"
-                android:layout_gravity="center"
+                android:text="@string/assets_management"
                 android:textColor="@color/button_dark"
                 android:textSize="20sp"
-                android:textStyle="bold"
-                android:text="@string/assets_management"/>
+                android:textStyle="bold" />
 
             <RelativeLayout
                 android:layout_width="match_parent"
@@ -52,7 +53,6 @@
                     android:minHeight="48dp"
                     android:paddingEnd="48dp"
                     android:textSize="@dimen/text_size"
-                    android:layout_toStartOf="@+id/search_img_btn"
                     tools:ignore="RtlSymmetry" />
 
                 <ImageButton
@@ -71,12 +71,12 @@
                     android:id="@+id/qr_scanner_btn"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
                     android:layout_toStartOf="@+id/search_img_btn"
                     android:background="@drawable/background_rounded_ripple"
-                    android:focusable="true"
                     android:clickable="true"
-                    android:layout_centerVertical="true"
                     android:contentDescription="@string/qr_scanner"
+                    android:focusable="true"
                     android:paddingHorizontal="12dp"
                     android:paddingVertical="4dp"
                     android:src="@drawable/ic_qr_scan_green" />
@@ -85,22 +85,23 @@
                     android:id="@+id/remove_text"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:layout_toStartOf="@+id/search_img_btn"
-                    android:focusable="true"
-                    android:clickable="true"
-                    android:background="@drawable/background_rounded_ripple"
                     android:layout_centerVertical="true"
+                    android:layout_toStartOf="@+id/search_img_btn"
+                    android:background="@drawable/background_rounded_ripple"
+                    android:clickable="true"
                     android:contentDescription="@string/remove_all_text"
+                    android:focusable="true"
                     android:paddingHorizontal="12dp"
                     android:paddingVertical="4dp"
                     android:src="@drawable/ic_close"
-                    android:visibility="gone"/>
+                    android:visibility="gone" />
             </RelativeLayout>
 
             <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
                 android:orientation="vertical">
+
                 <LinearLayout
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
@@ -112,12 +113,12 @@
                         style="@style/ButtonCustomStyle"
                         android:layout_width="0dp"
                         android:layout_height="wrap_content"
-                        android:layout_weight="1"
                         android:layout_marginStart="12dp"
                         android:layout_marginEnd="6dp"
+                        android:layout_weight="1"
                         android:drawableTop="@drawable/ic_transfer"
                         android:text="@string/transfer"
-                        android:textColor="@color/black"/>
+                        android:textColor="@color/black" />
 
                     <!-- Button 2 -->
                     <Button
@@ -125,12 +126,12 @@
                         style="@style/ButtonCustomStyle"
                         android:layout_width="0dp"
                         android:layout_height="wrap_content"
-                        android:layout_weight="1"
                         android:layout_marginStart="6dp"
                         android:layout_marginEnd="6dp"
+                        android:layout_weight="1"
                         android:drawableTop="@drawable/ic_checkin"
                         android:text="@string/check_in"
-                        android:textColor="@color/black"/>
+                        android:textColor="@color/black" />
 
                     <!-- Button 3 -->
                     <Button
@@ -138,12 +139,12 @@
                         style="@style/ButtonCustomStyle"
                         android:layout_width="0dp"
                         android:layout_height="wrap_content"
-                        android:layout_weight="1"
                         android:layout_marginStart="6dp"
                         android:layout_marginEnd="12dp"
+                        android:layout_weight="1"
                         android:drawableTop="@drawable/ic_checkout_location"
                         android:text="@string/check_out"
-                        android:textColor="@color/black"/>
+                        android:textColor="@color/black" />
 
                 </LinearLayout>
 
@@ -159,25 +160,40 @@
                         style="@style/ButtonCustomStyle"
                         android:layout_width="0dp"
                         android:layout_height="wrap_content"
-                        android:layout_weight="1"
                         android:layout_marginStart="12dp"
                         android:layout_marginEnd="6dp"
+                        android:layout_weight="1"
                         android:drawableTop="@drawable/ic_maintenance"
                         android:text="@string/maintenance"
-                        android:textColor="@color/black"/>
+                        android:textColor="@color/black" />
 
                     <!-- Button 5 -->
+
+
+                    <!-- Button 6 -->
+                    <Button
+                        android:id="@+id/audit_btn"
+                        style="@style/ButtonCustomStyle"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="6dp"
+                        android:layout_marginEnd="12dp"
+                        android:layout_weight="1"
+                        android:drawableTop="@drawable/ic_transfer"
+                        android:text="@string/audit"
+                        android:textColor="@color/black" />
+
                     <Button
                         android:id="@+id/setting_btn"
                         style="@style/ButtonCustomStyle"
                         android:layout_width="0dp"
                         android:layout_height="wrap_content"
-                        android:layout_weight="1"
                         android:layout_marginStart="6dp"
                         android:layout_marginEnd="12dp"
+                        android:layout_weight="1"
                         android:drawableTop="@drawable/ic_setting"
                         android:text="@string/setting"
-                        android:textColor="@color/black"/>
+                        android:textColor="@color/black" />
 
                 </LinearLayout>
 
@@ -185,6 +201,7 @@
         </LinearLayout>
 
     </ScrollView>
+
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"

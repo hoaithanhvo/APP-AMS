@@ -53,4 +53,21 @@
     <string name="save">Save</string>
     <string name="server_url">Server URL</string>
     <string name="remove_all_text">Remove all text</string>
+    <string name="audit">AUDIT</string>
+    <string name="inventory_number">Inventory Number</string>
+    <string name="asset_name">Asset name</string>
+    <string name="asset_no">Asset No</string>
+    <string name="department">Department</string>
+    <string name="cost_center">Cost Center</string>
+    <string name="label_status">Label Status</string>
+    <string name="asset_status">Asset Status</string>
+    <string name="location">Location</string>
+    <string name="good">Good</string>
+    <string name="blur">Blur</string>
+    <string name="using">Using</string>
+    <string name="no_use">No Use</string>
+    <string name="confirm">Confirm</string>
+    <string name="clear">Clear</string>
+    <string name="back">Back</string>
+
 </resources>
