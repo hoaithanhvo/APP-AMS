@@ -61,7 +61,7 @@
     <string name="cost_center">Cost Center</string>
     <string name="label_status">Label Status</string>
     <string name="asset_status">Asset Status</string>
-    <string name="location">Location</string>
+    <string name="location">Location Auto</string>
     <string name="good">Good</string>
     <string name="blur">Blur</string>
     <string name="using">Using</string>
